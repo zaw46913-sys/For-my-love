@@ -1,0 +1,29 @@
+body {
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: sans-serif;
+}
+h1 { color: #ff4d4d; }
+.heart {
+    background-color: #ff4d4d;
+    height: 50px;
+    width: 50px;
+    margin: 20px auto;
+    clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
+    animation: beat 0.8s infinite alternate;
+}
+@keyframes beat {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
